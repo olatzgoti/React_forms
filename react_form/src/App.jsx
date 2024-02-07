@@ -1,20 +1,26 @@
+import React from 'react'
 import { useState } from 'react'
 import './App.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import Contact from './component/Contact'
+import Home from './component/Home'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-    <BrowserRouter/>     
-    <Routes/>
+    
+    <BrowserRouter>     
+    <Routes>
+    <Route path="/home" element={<Home/>}/>
     <Route path="/" element={ <Contact/>}/>
-    <Routes/>
-    <BrowserRouter/>
-    </>
+    </Routes>
+    </BrowserRouter>
+    
+    
   )
 }
 
 export default App
+
+

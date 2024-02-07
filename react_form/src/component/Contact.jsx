@@ -36,10 +36,10 @@ return (
   <>
   <form onSubmit={handleSubmit}>
 
-    <input type="text"  value={data.name} onChange={handleInputChange} />
+    <input type="text"  value={data.name} name="name" onChange={handleInputChange} />
 
-    <input type="email" placeholder="email" value={data.email} onChange={handleInputChange} />
-    <input type="text" placeholder='age' value={data.age} onChange={handleInputChange}/>
+    <input type="email" placeholder="email" value={data.email} name="email" onChange={handleInputChange} />
+    <input type="text" placeholder='age' value={data.age} name="age" onChange={handleInputChange}/>
 
     <button type="submit" disabled={btnDisabled}>enviar</button>
     <p>{message}</p>
